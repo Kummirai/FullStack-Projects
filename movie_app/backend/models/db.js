@@ -8,12 +8,19 @@ const client = new MongoClient(process.env.URI);
 const connectToDatabase = async () => {
   try {
     await client.connect();
-    console.log(`Database connections successfully established!`);
+    console.log(`Database connection successful!`);
   } catch (error) {
     console.log(`Error: ${error}`);
-  } finally {
-    await client.close();
   }
 };
 
-export { connectToDatabase };
+const getAllMovies = async (client) => {
+  return await client
+    .db("sample_mflix")
+    .collection("movies")
+    .find()
+    .limit(10)
+    .toArray();
+};
+
+export { connectToDatabase, client, getAllMovies };

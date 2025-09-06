@@ -1,8 +1,13 @@
 import express from "express";
-import { connectToDatabase } from "./models/db.js";
+import { connectToDatabase, client, getAllMovies } from "./models/db.js";
+import { movieRoute } from "./routes/movieRoutes.js";
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8080;
+
+app.use(express.json());
+
+app.use("/api/movies", movieRoute);
 
 try {
   await connectToDatabase();
