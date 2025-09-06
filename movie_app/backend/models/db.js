@@ -23,4 +23,13 @@ const getAllMovies = async (client) => {
     .toArray();
 };
 
-export { connectToDatabase, client, getAllMovies };
+const getMovieByYear = async (client, year) => {
+  console.log(`my year is ${year}`);
+  return await client
+    .db("sample_mflix")
+    .collection("movies")
+    .find({ year: year })
+    .toArray();
+};
+
+export { connectToDatabase, client, getAllMovies, getMovieByYear };

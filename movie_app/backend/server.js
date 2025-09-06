@@ -1,4 +1,4 @@
-import express from "express";
+import express, { urlencoded } from "express";
 import { connectToDatabase, client, getAllMovies } from "./models/db.js";
 import { movieRoute } from "./routes/movieRoutes.js";
 
