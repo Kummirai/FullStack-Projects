@@ -19,7 +19,7 @@ const getAllMovies = async (client) => {
     .db("sample_mflix")
     .collection("movies")
     .find()
-    .limit(10)
+    .limit(40)
     .toArray();
 };
 
