@@ -14,11 +14,15 @@ const connectToDatabase = async () => {
   }
 };
 
+const getAllYears = async (client) => {
+  return await client.db("sample_mflix").collection("movies").distinct("year");
+};
+
 const getAllMovies = async (client) => {
   return await client
     .db("sample_mflix")
     .collection("movies")
-    .find()
+    .find({ year: 2008 })
     .limit(40)
     .toArray();
 };
@@ -32,4 +36,4 @@ const getMovieByYear = async (client, year) => {
     .toArray();
 };
 
-export { connectToDatabase, client, getAllMovies, getMovieByYear };
+export { connectToDatabase, client, getAllMovies, getMovieByYear, getAllYears };

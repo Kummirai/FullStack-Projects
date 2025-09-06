@@ -18,7 +18,8 @@
   min-height: 100vh;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 2rem;
+  grid-auto-rows: 360px;
+  gap: 1.5rem;
 }
 
 .card {
@@ -82,4 +83,27 @@
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.no-results {
+  height: 100vh;
+}
+
+.year-selection {
+  height: 100px;
+  overflow: hidden;
+}
+
+.button-container {
+  display: flex;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  /* scrollbar-width: none; */
+}
+
+.prev-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

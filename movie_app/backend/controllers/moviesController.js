@@ -1,8 +1,14 @@
-import { getAllMovies, client, getMovieByYear } from "../models/db.js";
+import {
+  getAllMovies,
+  client,
+  getMovieByYear,
+  getAllYears,
+} from "../models/db.js";
 
 const allMoviesController = async (req, res) => {
   const data = await getAllMovies(client);
-  res.json(data);
+  const years = await getAllYears(client);
+  res.json({ data, years });
 };
 
 const getMovieByYearController = async (req, res) => {
