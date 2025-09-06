@@ -24,11 +24,11 @@ const getAllMovies = async (client) => {
 };
 
 const getMovieByYear = async (client, year) => {
-  console.log(`my year is ${year}`);
   return await client
     .db("sample_mflix")
     .collection("movies")
     .find({ year: year })
+    .limit(20)
     .toArray();
 };
 
