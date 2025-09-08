@@ -15,7 +15,7 @@
 aside {
     height: 100vh;
     padding: 1% 0;
-    background-color: #f0fff0;
+    background: #efffef;
 }
 
 .sidebar {
@@ -54,13 +54,13 @@ aside {
 }
 
 .link:hover {
-    background-color: #96c584;
+    /*background-color: #96c584;*/
     cursor: pointer;
 
 }
 
 .icon-styling:hover {
-    color: #fff;
+    color: #96c584;
     cursor: pointer;
 }
 
@@ -76,17 +76,31 @@ aside {
 
 .details {
     grid-column: 2 / -1;
-    grid-row: 4 / 10;
+    grid-row: 4 / 11;
 }
 
 .bg-lime {
-    background-color: #96c584;
+    background-color: #51a137;
+    color: white;
+}
+
+.bg-lime-outline {
+    border: 1px solid #51a137;
+    color: #51a137;
+}
+
+.bg-lime-outline:hover {
+    background-color: #51a137;
     color: white;
 }
 
 .bg-lime:hover {
-    color: #96c584;
-    border-color: #96c584;
+    color: #51a137;
+    border-color: #51a137;
+}
+
+.lime {
+    color: #51a137;
 }
 
 
