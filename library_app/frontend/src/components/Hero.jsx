@@ -1,4 +1,5 @@
 import React from 'react';
+import InputField from "./InputField.jsx";
 
 function Hero() {
     return (
@@ -13,12 +14,7 @@ function Hero() {
                             consequuntur dolores error ex id incidunt laboriosam minima nam nemo non, quo recusandae
                             repellat repellendus reprehenderit tempora veniam?</p>
                         <div>
-                            <form action="" className="d-flex align-items-center">
-                                <input className={"form-control w-75"} type="text" name="book"/>
-                                <div className="col-sm-4 px-2">
-                                    <button className={"btn bg-lime-outline"}>Search</button>
-                                </div>
-                            </form>
+                            <InputField buttonText={"Search"}/>
                         </div>
                         <button className={"btn bg-lime mt-4"}>Log in to get started</button>
                     </div>

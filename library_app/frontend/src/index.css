@@ -103,6 +103,49 @@ aside {
     color: #51a137;
 }
 
+.book-read-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    gap: 1rem;
+    margin-top: 5rem;
+}
+
+.book-read-card {
+    height: 150px;
+}
+
+.image-container {
+    position: relative;
+    bottom: 70px;
+    left: 20px;
+}
+
+
+.fs-7 {
+    font-size: 0.85rem;
+}
+
+.lime-gradient {
+    background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-image {
+    width: 60px;
+    height: 60px;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    object-position: top center;
+}
 
 
 
