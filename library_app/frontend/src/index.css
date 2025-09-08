@@ -114,15 +114,24 @@ aside {
     height: 150px;
 }
 
-.image-container {
+
+.image-container img {
     position: relative;
     bottom: 70px;
     left: 20px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
 }
 
 
 .fs-7 {
     font-size: 0.85rem;
+}
+
+.fs-8 {
+    font-size: 0.75rem;
 }
 
 .lime-gradient {
@@ -145,6 +154,50 @@ aside {
     object-fit: cover;
     border-radius: 50%;
     object-position: top center;
+}
+
+.book-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 2rem;
+}
+
+.book-card-image {
+    height: 230px;
+}
+
+.book-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.author-card {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.author-image {
+    width: 48px;
+    height: 48px;
+}
+
+.author-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    border-radius: 50%;
+}
+
+.line-1 {
+    display: -webkit-box;
+    line-clamp: 1;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 
