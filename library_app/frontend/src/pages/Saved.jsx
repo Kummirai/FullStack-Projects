@@ -1,7 +1,11 @@
-import React from "react";
+import Sidebar from "../components/Sidebar";
 
 const Saved = () => {
-  return <div>Saved</div>;
+  return (
+    <>
+      <Sidebar />
+    </>
+  );
 };
 
 export default Saved;

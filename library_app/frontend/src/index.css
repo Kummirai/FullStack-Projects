@@ -1,11 +1,69 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+aside {
+    height: 100vh;
+    border-right: 1px solid #bdbdbd;
+    padding: 1% 0;
+}
+
+.sidebar {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 1fr);
+    place-items: center;
+}
+
+.logo {
+    grid-row: 1 / 2;
+}
+
+.nav-icons {
+    grid-row: 4 / 8;
+}
+
+.auth {
+    grid-row: 12 / -1;
+}
+
+.link {
+    padding: 2px;
+    margin: 4px;
+    border-radius: 50%;
+    display: flex;
+    place-content: center;
+    text-decoration: none;
+}
+
+.icon-styling {
+    font-size: 32px;
+    padding: 10px 8px;
+    border-radius: 50%;
+    color: #4d4d4d;
+}
+
+.link:hover {
+    background-color: darkgray;
+    cursor: pointer;
+
+}
+
+.icon-styling:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+
 
 

@@ -1,7 +1,11 @@
-import React from "react";
+import Sidebar from "../components/Sidebar";
 
 const Search = () => {
-  return <div>Search</div>;
+  return (
+    <>
+      <Sidebar />
+    </>
+  );
 };
 
 export default Search;

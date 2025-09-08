@@ -1,7 +1,11 @@
-import React from "react";
+import Sidebar from "../components/Sidebar";
 
 const Reading = () => {
-  return <div>Reading</div>;
+    return (
+        <>
+            <Sidebar/>
+        </>
+    );
 };
 
 export default Reading;
