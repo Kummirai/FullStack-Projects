@@ -20,8 +20,6 @@ function App() {
             }
 
             const data = await response.json();
-            console.log(data.books);
-            console.log(data.authors);
             setBooks(data.books);
             setAuthors(data.authors);
         } catch (error) {
