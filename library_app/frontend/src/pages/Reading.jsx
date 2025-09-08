@@ -3,7 +3,11 @@ import Sidebar from "../components/Sidebar";
 const Reading = () => {
     return (
         <>
-            <Sidebar/>
+            <div className={"container-fluid"}>
+                <div className={"row"}>
+                    <Sidebar/>
+                </div>
+            </div>
         </>
     );
 };

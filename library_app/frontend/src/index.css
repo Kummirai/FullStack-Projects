@@ -14,8 +14,8 @@
 
 aside {
     height: 100vh;
-    border-right: 1px solid #bdbdbd;
     padding: 1% 0;
+    background-color: #f0fff0;
 }
 
 .sidebar {
@@ -38,8 +38,8 @@ aside {
 }
 
 .link {
-    padding: 2px;
-    margin: 4px;
+    padding: 8px;
+    margin: 8px;
     border-radius: 50%;
     display: flex;
     place-content: center;
@@ -47,14 +47,14 @@ aside {
 }
 
 .icon-styling {
-    font-size: 32px;
-    padding: 10px 8px;
+    padding: 2px 0;
+    font-size: 28px;
     border-radius: 50%;
-    color: #4d4d4d;
+    color: #2d3039;
 }
 
 .link:hover {
-    background-color: darkgray;
+    background-color: #96c584;
     cursor: pointer;
 
 }
@@ -62,6 +62,31 @@ aside {
 .icon-styling:hover {
     color: #fff;
     cursor: pointer;
+}
+
+.hero {
+    height: 100vh;
+}
+
+.hero-details {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+.details {
+    grid-column: 2 / -1;
+    grid-row: 4 / 10;
+}
+
+.bg-lime {
+    background-color: #96c584;
+    color: white;
+}
+
+.bg-lime:hover {
+    color: #96c584;
+    border-color: #96c584;
 }
 
 
