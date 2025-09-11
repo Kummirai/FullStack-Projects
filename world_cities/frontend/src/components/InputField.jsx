@@ -2,7 +2,7 @@ import React from "react";
 
 const InputField = ({ answer, getAnswer, handleSubmit }) => {
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex items-center justify-center my-4">
       <form
         onSubmit={(e) => handleSubmit(e)}
         className="w-[500px] h-[150px] flex flex-col justify-center items-center"

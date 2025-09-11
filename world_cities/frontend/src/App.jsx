@@ -19,15 +19,15 @@ function App() {
   return (
     <div className="container h-[100vh] flex flex-col p-10 m-auto">
       <Header />
-      <div className="mt-[10rem]">
+      <div className="mt-[10rem] flex flex-col items-center w-[fit-content] shadow-2xl p-10 px-20 rounded-2xl m-auto">
         <Question />
         <InputField
           answer={answer}
           getAnswer={getAnswer}
           handleSubmit={handleSubmit}
         />
+        <CorrectAnswer />
       </div>
-      <CorrectAnswer />
     </div>
   );
 }
