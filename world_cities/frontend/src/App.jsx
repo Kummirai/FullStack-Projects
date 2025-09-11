@@ -24,6 +24,7 @@ function App() {
     }, 1300);
   };
 
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (answer.length !== 0) {

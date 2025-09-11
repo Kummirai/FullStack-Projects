@@ -1,7 +1,6 @@
 import React from "react";
 
 const InputField = ({ answer, getAnswer, handleSubmit, isCorrect }) => {
-  console.log(isCorrect);
 
   return (
     <div className="flex items-center justify-center my-4">
