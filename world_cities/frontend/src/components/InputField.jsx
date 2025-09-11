@@ -13,7 +13,7 @@ const InputField = ({ answer, getAnswer, handleSubmit }) => {
           id=""
           value={answer}
           onChange={(e) => getAnswer(e)}
-          className="block border border-gray-300 rounded-3xl p-2.5 w-full outline-blue-200 text-gray-700 mb-5"
+          className="bg-gray-200 block  rounded-3xl p-2.5 w-full outline-blue-300 text-gray-700 mb-5"
         />
         <button
           className="bg-blue-950 border text-white px-5 py-1 rounded-3xl hover:cursor-pointer hover:bg-transparent hover:text-blue-950
