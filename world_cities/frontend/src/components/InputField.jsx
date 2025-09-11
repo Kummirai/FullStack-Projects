@@ -1,16 +1,18 @@
 import React from "react";
 
-const InputField = () => {
+const InputField = ({ answer, getAnswer, handleSubmit }) => {
   return (
     <div className="flex items-center justify-center">
       <form
-        action=""
+        onSubmit={(e) => handleSubmit(e)}
         className="w-[500px] h-[150px] flex flex-col justify-center items-center"
       >
         <input
           type="text"
           name=""
           id=""
+          value={answer}
+          onChange={(e) => getAnswer(e)}
           className="block border border-gray-300 rounded-3xl p-2.5 w-full outline-blue-200 text-gray-700 mb-5"
         />
         <button
