@@ -1,12 +1,12 @@
 import React from "react";
 
-const Header = () => {
+const Header = ({ score }) => {
   return (
     <div className="flex justify-between">
-      <h1 className="font-bold text-xl text-gray-900">CountryGame</h1>
+      <h1 className="font-bold text-xl text-gray-600">CountryGame</h1>
       <div>
         <p>
-          <span>90</span>
+          <span>{score}</span>
           <span>pts</span>
         </p>
       </div>
