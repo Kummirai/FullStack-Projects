@@ -1,6 +1,5 @@
 import express from 'express';
 import {connectToDatabase} from "./models/db.js";
-import route from "./routes/indexRoute.js";
 import indexRoute from "./routes/indexRoute.js";
 import cors from "cors";
 

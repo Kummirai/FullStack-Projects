@@ -9,7 +9,7 @@ import BooksContext from "../context/Context.jsx";
 
 const Reading = () => {
 
-    const { books, authors} = useContext( BooksContext);
+    const { fiveBooks, authors} = useContext( BooksContext);
     return (
         <>
             <div className={"container-fluid"}>
@@ -26,8 +26,9 @@ const Reading = () => {
                         <div>
                             <h2 className={"display-6 fs-6 fw-bold"}>Books you read last</h2>
                             <div className={"mt-5 py-5 book-read-container"}>
-                                {books.map((book, index) => (
-                                    index > 13 && index < 17 ?
+                                {
+                                    fiveBooks.map((book, index) => (
+                                    index > 46 && index < 50 ?
                                     <BookReadCard key={book._id} book={book}/>
                                         : ""
                                 ))}
@@ -37,8 +38,8 @@ const Reading = () => {
                             <h2 className={"display-6 fs-6 fw-bold"}>Suggested books</h2>
                             <div className={"row"}>
                                 <div className={"col-9 book-card-container mt-2"}>
-                                    {books.map((book, index) => (
-                                        index < 5?
+                                    {fiveBooks.map((book, index) => (
+                                        index > 41 && index < 47?
                                             <BookCard book={book} key={book._id}/>
                                             : ""
                                     ))}
@@ -47,7 +48,9 @@ const Reading = () => {
                                     <h2 className={"display-6 fs-7 fw-bold mb-2"}>Popular Authors</h2>
                                     <div className={"d-flex flex-column"}>
                                         {authors.map((author, index) => (
+                                            index < 3 ?
                                             <AuthorCard key={index} author={author}/>
+                                                : ""
                                         ))}
                                     </div>
                                 </div>

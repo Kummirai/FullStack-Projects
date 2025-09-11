@@ -13,7 +13,7 @@ const connectToDatabase =  async  () => {
 
 
 const getBooks = async (client) => {
-    return await client.db("library").collection("books").find().limit(20).toArray();
+    return await client.db("library").collection("books").find().limit(50).toArray();
 }
 
 const getPopularAuthors = async (client) => {
@@ -27,7 +27,7 @@ const getPopularAuthors = async (client) => {
         {
             $sort: { count: -1 }      // Optional: sort by count descending
         }
-    ]).limit(3).toArray();
+    ]).toArray();
 }
 
 export {client, connectToDatabase, getBooks, getPopularAuthors};

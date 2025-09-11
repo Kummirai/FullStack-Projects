@@ -4,7 +4,7 @@ function BookCard({book}) {
     return (
         <div className="book-card">
             <div className="book-card-image mb-1">
-                <img className={"img-fluid rounded-4 shadow-lg"}
+                <img className={"img-fluid rounded-1 shadow-lg"}
                      src={book.image_url_l} alt={book.book_title}/>
             </div>
             <div className="book-card-content p-1">

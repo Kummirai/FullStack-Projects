@@ -8,7 +8,7 @@ import  BooksContext from "./context/Context.jsx";
 
 function App() {
 
-    const [books , setBooks] = useState([]);
+    const [fiveBooks , setFiveBooks] = useState([]);
     const [authors, setAuthors] = useState([]);
 
     const fetchBooks = async () => {
@@ -20,7 +20,7 @@ function App() {
             }
 
             const data = await response.json();
-            setBooks(data.books);
+            setFiveBooks(data.books);
             setAuthors(data.authors);
         } catch (error) {
             console.error("Error fetching movies:", error);
@@ -28,7 +28,7 @@ function App() {
     };
 
     const context = {
-        books,
+        fiveBooks,
         authors,
     }
 
