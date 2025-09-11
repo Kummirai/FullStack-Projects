@@ -6,7 +6,7 @@ const CorrectAnswer = ({ question, showAnswer }) => {
       {!showAnswer ? (
         ""
       ) : (
-        <p className="text-5xl text-green-800">{question["Capital City"]}</p>
+        <p className="text-5xl text-[#44647c]">{question["Capital City"]}</p>
       )}
     </div>
   );

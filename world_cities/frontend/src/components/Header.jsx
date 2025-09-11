@@ -1,13 +1,26 @@
 import React from "react";
 
-const Header = ({ score }) => {
+const Header = ({ inCorrect, correct }) => {
+  console.log(correct);
+  console.log(inCorrect);
+
   return (
     <div className="flex justify-between">
       <h1 className="font-bold text-xl text-gray-600">CountryGame</h1>
       <div>
         <p>
-          <span>{score}</span>
-          <span>pts</span>
+          <span className="text-2xl font-bold">
+            {((correct / (correct + inCorrect)) * 100).toFixed(1)}
+          </span>
+          <span> pts</span>
+          <div>
+            <p className="text-xs text-green-700">
+              Correct <span className="font-bold"> {correct}</span>
+            </p>
+            <p className="text-xs text-red-600">
+              Incorrect <span className="font-bold"> {inCorrect}</span>
+            </p>
+          </div>
         </p>
       </div>
     </div>
