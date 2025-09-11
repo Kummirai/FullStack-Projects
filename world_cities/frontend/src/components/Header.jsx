@@ -10,7 +10,9 @@ const Header = ({ inCorrect, correct }) => {
       <div>
         <p>
           <span className="text-2xl font-bold">
-            {((correct / (correct + inCorrect)) * 100).toFixed(1)}
+            {isNaN(((correct / (correct + inCorrect)) * 100).toFixed(1))
+              ? "0"
+              : ((correct / (correct + inCorrect)) * 100).toFixed(1)}
           </span>
           <span> pts</span>
           <div>
